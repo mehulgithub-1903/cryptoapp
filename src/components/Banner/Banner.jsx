@@ -3,7 +3,15 @@ import React from 'react'
 import Carousel from './Carousel'
 
 
-const useStyle= makeStyles(()=>({
+const useStyle= makeStyles((theme)=>({
+    name:{
+      fontWeight: "bold",
+      marginBottom: 15,
+      fontFamily: "Montserrat",
+      [theme.breakpoints.down("sm")]: {
+        fontSize:"2.5em"
+      },
+  },
     banner:{
         backgroundImage:"url(./banner3.jpg)",
     }, 
@@ -36,11 +44,7 @@ const Banner = () => {
             
                 <Typography      
                 variant="h2"
-                style={{
-                    fontWeight: "bold",
-                    marginBottom: 15,
-                    fontFamily: "Montserrat",
-                }}>
+                className={classes.name}>
                     C R Y P T O N I C
                 </Typography>  
                 <Typography

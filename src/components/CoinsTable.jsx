@@ -197,7 +197,7 @@ export default function CoinsTable() {
           count={(handleSearch()?.length / 10).toFixed(0)}
           style={{
             padding: 20,
-            width: "100%",
+            width: "110%",
             display: "flex",
             justifyContent: "center",
           }}

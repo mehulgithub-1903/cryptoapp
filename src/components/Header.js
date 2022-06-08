@@ -10,6 +10,7 @@
       fontFamily: "Montserrat",
       fontWeight: "bold",
       cursor: "pointer",
+      
     },
   }));
   const darkTheme = createTheme({
@@ -44,15 +45,15 @@
          </Typography>
           <Select variant='outlined'
           style={{ 
-            width: 200,
+            width: 100,
             height: 40,  
             marginRight: 15,
           }}
           value={currency}
           onChange={(e)=>setCurrency(e.target.value)}
           >
-           <MenuItem value={"USD"}>United States Dollar</MenuItem>
-           <MenuItem value={"INR"}>Indian Rupee</MenuItem>
+           <MenuItem value={"USD"}>USD</MenuItem>
+           <MenuItem value={"INR"}>INR</MenuItem>
            <MenuItem value={"EUR"}>Euro</MenuItem>
            
          </Select>
